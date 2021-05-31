@@ -1,7 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Cookie', cursive;
+}
 
+header, footer {
+    width:100%;
+    background-color: black;
+    font-family:  'Cookie', cursive;
+    color:white;
 }
 
 body {
@@ -13,12 +20,8 @@ body {
 	font-family: 'Cookie', cursive;
 }
 
-header, footer {
-    padding-top: 10px;
-    width:100%;
-    background-color: black;
-    font-family:  'Cookie', cursive;
-    color:white;
+#bladiguess{
+    margin-right: 80px;
 }
 
 header {
@@ -30,40 +33,24 @@ header {
 a {
     color:white;
 }
-
-nav {
-    height:10vh;
-}
-
-ul {
-    width:100%;
+ul{
     text-align: center;
 }
-
 li {
+    
     font-size:1.8rem;
     width:7.5%;
-    padding: 30pxs;
+    padding: 30px;
     display: inline-flex;
-    font-family: 'Cookie', cursive;
 }
-#tel_li{
-	float: right;
-	font-size:1.8rem;
-	padding-right: 20 px;
+#nr_tele{
+    position: absolute;
+    top:20px;
+    right: 60px;
+    font-size: 30px;
 }
-
-
 a:hover {
     color:#FFD77F;
-}
-
-#logo {
-    position:absolute;
-    left:2%;
-    top:15px;
-    width: 60px;
-    height: 60px;
 }
 
 .slider {
@@ -79,25 +66,48 @@ a:hover {
     top:10vh; 
 }
 
+#logo {
+    position:absolute;
+    left:2%;
+    top:15px;
+    width: 60px;
+    height: 60px;
+}
 
 .slider span {
     position: absolute;
-    top:15%;
-    left:0px;
-    width:30vw;
+    top:35px;
+    width: 500px;
     margin-left:2%;
     padding-left:2%;
     border-bottom: 3px solid white;
     font-size: 30px;
-	font-family: 'Arial';
 
 }
 
 button {
-    position:absolute;
-    top:20%;
     height: 40px;
     width: 200px;
+    position:absolute;
+    top:20%;
+}
+
+#guzik1 {
+    color:#7FD7FF;
+    left:2%;
+	position: center;
+	font-size: 30px;
+    background-color:black;
+    border:2px solid #7FD7FF;
+}
+
+#guzik2 {
+    left:14%;
+    background-color: #936c02;
+    color:#FFD77F;
+    border:2px solid #FFD77F;
+	font-size: 30px;
+    position: center;
 }
 
 button:hover {
@@ -106,27 +116,6 @@ button:hover {
     background-color:black !important;
 }
 
-#button1 {
-    color:#7FD7FF;
-    background-color:black;
-    border:2px solid #7FD7FF;
-    left:2%;
-	position: center;
-	font-family: 'Cookie', cursive;
-	font-size: 30px;
-}
-
-
-
-#button2 {
-    left:14%;
-    background-color: #936c02;
-    color:#FFD77F;
-    border:2px solid #FFD77F;
-	font-family: 'Cookie', cursive;
-	font-size: 30px;
-    	position: center;
-}
 
 .fotki {
     width:95%;
@@ -139,12 +128,6 @@ button:hover {
     left:2.5%;
 }
 
-.fotki div {
-    border: solid 3px black;
-    background-size: cover;
-    text-align: left;
-
-}
 
 #skladniki {
     background-image: url("https://cdn.pixabay.com/photo/2016/05/24/13/29/olive-oil-1412361__340.jpg");
@@ -164,11 +147,16 @@ button:hover {
 	padding-top: 160px;
 
 }
-.podpis{
-	margin-right: 10px;
-	font-family: 'Cookie', cursive;
-	font-size:2.2rem;
-	text-shadow: black 0.5em 0.5em 0.7em;
+.napis{
+	font-size:30px;
+    margin-right: 100px;
+}
+
+.fotki div {
+    border: solid 3px black;
+    background-size: cover;
+    text-align: left;
+
 }
 
 .pizza {
@@ -184,37 +172,37 @@ button:hover {
     column-gap: 50px;
 }
 
-.pizzafoto {
+
+
+#pi1 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/12/05/20/10/pizza-3000285_960_720.png");
+}
+
+#pi2  {
+    background-image:url("https://cdn.pixabay.com/photo/2017/01/03/11/33/pizza-1949183__340.jpg") ;
+}
+
+#pi3  {
+    background-image:url("https://cdn.pixabay.com/photo/2018/03/06/13/47/food-3203445_960_720.jpg") ;
+}
+
+#pi4 {
+    background-image:url("https://cdn.pixabay.com/photo/2016/05/05/09/19/pizza-1373508_960_720.jpg");
+}
+
+.pifo {
     background-repeat: no-repeat;
     background-position: center;
 }
-
-#pizza1 {
-    background-image: url("https://cdn.pixabay.com/photo/2017/12/05/20/10/pizza-3000285_960_720.png");
-
-}
-#pizza2  {
-    background-image:url("https://cdn.pixabay.com/photo/2017/01/03/11/33/pizza-1949183__340.jpg") ;
-}
-#pizza3  {
-    background-image:url("https://cdn.pixabay.com/photo/2018/03/06/13/47/food-3203445_960_720.jpg") ;
-}
-#pizza4 {
-
-    background-image:url("https://cdn.pixabay.com/photo/2016/05/05/09/19/pizza-1373508_960_720.jpg");
-
-}
-
 .pizza div {
+    border-top: 30px solid black;
     background-color:black;
     background-size: cover;
-    border-top: 30px solid black;
-    width: 100%;
     height: 70%;
 }
 
 
-.pizzatekst {
+.pitext {
     text-align: center;
     width: 100%;
     height: 80%;
@@ -223,9 +211,10 @@ button:hover {
 
 
 footer {
+    padding-top:15px ;
     position:absolute;
-    top:120vh;
-    height:5vh;
+    top:1200px;
+    height:50px;
     background-color:black;
     text-align: center;
     font-size: 28px;
